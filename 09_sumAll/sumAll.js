@@ -3,6 +3,7 @@ const sumAll = function(num1, num2) {
     let low = Math.min(num1, num2);
     let high = Math.max(num1, num2);
 
+    // These error checks could be avoided by using isInteger
     if (typeof num1 != "number" || typeof num2 != "number") {
         return "ERROR";
     }
